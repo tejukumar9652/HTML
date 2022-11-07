@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>forms</title>
+  <style>
+    input{
+      padding: 0px 50px 20px 10px;
+      text-align: left;
+      margin :auto;
+      width: 30%;
+    }
+    textarea{
+      width: 70%;
+      height: 100px;
+    }
+   .item1 select{
+    width: 30%;
+    height: 40px;
+    margin-top: 20px;
+   }
+   section input{
+    width: 30px;
+   }
+  </style>
+</head>
+<body>
+ <h1 style="background-color: blue; text-align:center;">use my current location</h1> 
+  <form>
+<span>
+<input type="text" name="text"placeholder='name' required/>
+<input type="tel" name="tel"placeholder='10-digit mobile number'/>
+</span><br><br>
+<span>
+  <input type="number" name="pincode"placeholder='pincode'/>
+  <input type="text" name="text"placeholder='locality'/>
+  </span><br><br>
+  <textarea placeholder='adress(area&street)'></textarea>
+  
+    <input type="text" name="text"placeholder='city/district/town'/>
+    <span class="item1">
+    <select >
+      <option placeholder="state">----select state---</option>
+      <option>andhra pradesh</option>
+      <option>madhya pradesh</option>
+      <option>uttar pradesh</option>
+      <option>karnataka</option>
+      <option>maharastra</option>
+    </select>
+  </span><br><br>
+  <span>
+    <input type="text" name="text"placeholder='landmark(optional)'/>
+    <input type="text" name="text"placeholder='alternate phone(optional)'/>
+    </span><br><br>
+    <section >
+    <label>Adress type:</label><br><br>
+    <input type="radio" name="Adress type" value="home">
+    <label>home</label>
+    <input type="radio" name="Adress type" value="work">
+    <label>work</label>
+    <!-- <input type="radio" name="Adress type" value="others">
+    <label>others</label><br/> -->
+  </section><br><br>
+  <button>save</button>&nbsp;
+  <button>cancel</button>
+  </form>
+</body>
+</html>
